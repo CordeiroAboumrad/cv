@@ -8,7 +8,7 @@
     <title>😀JP😀</title>
 </head>
 <body>
-    <table cellspacing="20">
+    <table cellspacing="80">
         <tr>
             <td>
                 <img class="img" src="images/jean_aboumrad.jpg" alt="jean aboumrad profile picture">
@@ -17,6 +17,18 @@
                 <h1>Jean Aboumrad</h1>
                 <p><em>Software developer</em> and CEO of <strong><a href="https://www.ingetechs.com/">Ingenious Technologies</a></strong></p>
                 <p>I am a Web and Android developer.</p>
+            </td>
+            <td>
+                <div class="cube-container">
+                    <div class="cube">
+                      <div class="front"></div>
+                      <div class="back"></div>
+                      <div class="right"></div>
+                      <div class="left"></div>
+                      <div class="top"></div>
+                      <div class="bottom"></div>
+                    </div>
+                  </div>                  
             </td>
         </tr>
     </table>
@@ -149,4 +161,85 @@
         border-radius: 50%;
         width: 200px;
     }
+
+    .cube-container {
+    perspective: 1000px;
+    }
+
+    .cube {
+    width: 100px;
+    height: 100px;
+    position: relative;
+    transform-style: preserve-3d;
+    animation: spin 8s  linear infinite;
+    }
+
+    .front, .back, .right, .left, .top, .bottom {
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    }
+    
+    .front {
+        background-color: chartreuse;
+    }
+    
+    .back {
+        background-color: turquoise;
+    }
+    
+    .right {
+        background-color: yellow;
+    }
+    
+    .left {
+        background-color: purple;
+    }
+    
+    .top {
+        background-color: green;
+    }
+    
+    .bottom {
+        background-color: red;
+    }
+
+    .front {
+    transform: translateZ(50px);
+    }
+
+    .back {
+    transform: rotateY(180deg) translateZ(50px);
+    }
+
+    .right {
+    transform: rotateY(90deg) translateZ(50px);
+    }
+
+    .left {
+    transform: rotateY(-90deg) translateZ(50px);
+    }
+
+    .top {
+    transform: rotateX(90deg) translateZ(50px);
+    }
+
+    .bottom {
+    transform: rotateX(-90deg) translateZ(50px);
+    }
+
+    @keyframes spin {
+    from {
+        transform: rotate3d(1, 1, 1, 0deg);        
+    }
+    to {
+        transform: rotate3d(1, 1, 1, 360deg);
+    }
+    }
+
+    .neon {
+    color: blue;
+    text-shadow: 0 0 10px green, 0 0 20px blue, 0 0 30px purple, 0 0 40px red, 0 0 50px white, 0 0 60px orange, 0 0 70px cyan;
+    }
+
 </style>
