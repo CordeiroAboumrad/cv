@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width">
     <title>😀JP😀</title>
+    <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
     <div class="tableDiv">
@@ -21,14 +22,14 @@
                     <br>
                     <div class="cube-container">
                         <div class="cube">
-                        <div class="front">JP</div>
-                        <div class="back">JP</div>
-                        <div class="right">JP</div>
-                        <div class="left">JP</div>
-                        <div class="top">JP</div>
-                        <div class="bottom">JP</div>
+                        <div class="front"><img class="smallImg" src="images/jean_aboumrad.jpg" alt="jean aboumrad profile picture"></div>
+                        <div class="back"><img class="smallImg" src="images/jean_aboumrad.jpg" alt="jean aboumrad profile picture"></div>
+                        <div class="right"><img class="smallImg" src="images/jean_aboumrad.jpg" alt="jean aboumrad profile picture"></div>
+                        <div class="left"><img class="smallImg" src="images/jean_aboumrad.jpg" alt="jean aboumrad profile picture"></div>
+                        <div class="top"><img class="smallImg" src="images/jean_aboumrad.jpg" alt="jean aboumrad profile picture"></div>
+                        <div class="bottom"><img class="smallImg" src="images/jean_aboumrad.jpg" alt="jean aboumrad profile picture"></div>
                         </div>
-                    </div>                  
+                    </div>
                 </td>
             </tr>
         </table>
@@ -154,116 +155,3 @@
 
 </body>
 </html>
-
-<style>
-    body {
-        background-color: #EEE3CB;
-    }
-
-   .tableDiv {
-    text-align: center;
-   }
-
-   table {
-    margin-left: auto;
-    margin-right: auto;
-   }
-
-    hr {
-        border-style: none;
-        border-top: 7px dotted red;
-        height: 1px;
-        width: 10%;
-    }
-
-    img {
-        border-radius: 50%;
-        width: 200px;
-    }
-
-    .cube-container {
-    perspective: 1000px;
-    }
-
-    .cube {
-    width: 100px;
-    height: 100px;
-    padding: 10%;
-    position: relative;
-    transform-style: preserve-3d;
-    animation: spin 8s  linear infinite;
-    }
-
-    .front, .back, .right, .left, .top, .bottom {
-    width: 100px;
-    height: 100px;
-    position: absolute;
-    text-align: -webkit-center;
-    justify-content: center;
-    display: flex;
-    align-items: center;
-    }
-    
-    .front {
-        background-color: chartreuse;
-    }
-    
-    .back {
-        background-color: turquoise;
-    }
-    
-    .right {
-        background-color: yellow;
-    }
-    
-    .left {
-        background-color: purple;
-    }
-    
-    .top {
-        background-color: green;
-    }
-    
-    .bottom {
-        background-color: red;
-    }
-
-    .front {
-    transform: translateZ(50px);
-    }
-
-    .back {
-    transform: rotateY(180deg) translateZ(50px);
-    }
-
-    .right {
-    transform: rotateY(90deg) translateZ(50px);
-    }
-
-    .left {
-    transform: rotateY(-90deg) translateZ(50px);
-    }
-
-    .top {
-    transform: rotateX(90deg) translateZ(50px);
-    }
-
-    .bottom {
-    transform: rotateX(-90deg) translateZ(50px);
-    }
-
-    @keyframes spin {
-    from {
-        transform: rotate3d(1, 1, 1, 0deg);        
-    }
-    to {
-        transform: rotate3d(1, 1, 1, 360deg);
-    }
-    }
-
-    .neon {
-    color: blue;
-    text-shadow: 0 0 10px green, 0 0 20px blue, 0 0 30px purple, 0 0 40px red, 0 0 50px white, 0 0 60px orange, 0 0 70px cyan;
-    }
-
-</style>

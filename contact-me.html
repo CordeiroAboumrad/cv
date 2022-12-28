@@ -5,25 +5,50 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact Me</title>
+    <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
-    <h1>My Contact Details</h1>
-    <p>My Fictional Address</p>
-    <p>1234567890</p>
-    <p>myemail@gmail.com</p>
-
+    <div class="tableDiv">
+        <h1>My Contact Details</h1>
+        <p>My Fictional Address</p>
+        <p>1234567890</p>
+        <p>myemail@gmail.com</p>
+    </table>
+    
     <hr>
     <form class="" action="mailto:cordeiro.aboumrad@gmail.com" method="post" encoding="utf-8" enctype="text/plain">
-        <label>Your Name:</label>
-        <input type="text" name="yourName" value=""><br>
-
-        <label>Your email:</label>
-        <input type="email" name="yourEmail"><br>
-        
-        <label>Your message:</label>
-        <textarea name="yourMessage" rows="8" cols="80"></textarea><br>
-        <input type="submit" name="">
-        <label></label>
+        <table cellspacing="80">
+            <tr>
+                <td>
+                    <label>Your Name:</label>
+                </td>
+                <td>
+                    <input class="inputElement" type="text" name="yourName" value=""><br>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label>Your email:</label>
+                </td>
+                <td>
+                    <input class="inputElement" type="email" name="yourEmail"><br>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label>Your message:</label>
+                </td>
+                <td>
+                    <textarea class="inputElement" name="yourMessage" rows="8" cols="80"></textarea><br>
+                </td>
+            </tr>
+            <tr>
+                <td></td>
+                <td style="text-align: -webkit-center;">
+                    <input type="submit" name="">
+                </td>
+            </tr>            
+        </table>
     </form>
 </body>
 </html>
