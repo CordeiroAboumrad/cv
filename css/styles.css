@@ -1,9 +1,14 @@
 body {
-    background-color: #EEE3CB;
+    background-color: #DEFCF9;
 }
 
 .tableDiv {
-text-align: center;
+    text-align: center;
+}
+
+.border_images {
+    width: 150px;
+    background-size: contain;
 }
 
 table {
@@ -20,7 +25,7 @@ hr {
 
 img {
     border-radius: 50%;
-    width: 200px;
+    width: 100%;
 }
 
 .smallImg {
@@ -28,9 +33,9 @@ img {
     width: 50px;
 }
 
-h1 {
+/* h1 {
     color: #FFB100;
-}
+} */
 
 .inputElement {
     width: 80%;
@@ -49,6 +54,22 @@ padding: 10%;
 position: relative;
 transform-style: preserve-3d;
 animation: spin 8s  linear infinite;
+}
+
+#main_h1 {
+    color: #FFB100;
+    animation-name: titleColor;
+    animation-duration: 8s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+@keyframes titleColor {
+    0% {color: #FFB100}
+    25% {color: #CCA8E9;}
+    50% {color: #FFB100}
+    75% {color: #CCA8E9;}
+    100% {color: #FFB100}
 }
 
 .front, .back, .right, .left, .top, .bottom {
@@ -78,7 +99,7 @@ align-items: center;
 }
 
 .top {
-    background-color: green;
+    background-color: wheat;
 }
 
 .bottom {
@@ -109,9 +130,12 @@ transform: rotateX(90deg) translateZ(50px);
 transform: rotateX(-90deg) translateZ(50px);
 }
 
+/* background-color: red;
+background-color: yellow; */
+
 @keyframes spin {
 from {
-    transform: rotate3d(1, 1, 1, 0deg);        
+    transform: rotate3d(1, 1, 1, 0deg);
 }
 to {
     transform: rotate3d(1, 1, 1, 360deg);
